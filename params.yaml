@@ -1,1 +1,8 @@
-key : val
+AUGMENTATION : True                 # want variation in existing images
+IMAGE_SIZE : [224, 224, 3]          # image size standard for Vgg16 model https://keras.io/api/applications/vgg/
+BATCH_SIZE : 16                     # depends on your machine capacity
+INCLUDE_TOP : False                 # Don't want to train the model from scratch, want pretrained model
+EPOCHS : 1                          # No. of iteration ideally this value need to be optimized based on your score vs no. of epochs
+CLASSES : 2                         # No. of classes in image classification - it's a binary classification
+WEIGHTS : imagenet                  # weights name - standards from https://keras.io/api/applications/vgg/
+LEARNING_RATE : 0.01                # learning rate
