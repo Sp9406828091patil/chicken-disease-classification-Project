@@ -17,4 +17,6 @@ Flask-Cors
 Rust
 Cargo
 wheel
+pillow
+scipy
 -e .
